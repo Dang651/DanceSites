@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '2.4.1'
+ruby '2.3.0'
 
 gem 'rails', '~> 5.0.4'
 
 gem 'bcrypt', '~> 3.1.7'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
@@ -35,4 +36,8 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
+end
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
 end
