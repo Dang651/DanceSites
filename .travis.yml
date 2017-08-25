@@ -1,5 +1,6 @@
-  language: ruby
-script: bundle exec rspec
+language: ruby
+script:
+ - bundle exec rspec
+ - bundle exec rubocop -REDS
 rvm:
-- 2.3.4
 - 2.4.1
